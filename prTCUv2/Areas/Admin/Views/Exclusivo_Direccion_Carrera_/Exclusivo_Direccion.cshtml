@@ -1,0 +1,253 @@
+﻿
+@{
+    ViewBag.Title = "Exclusivo_Direccion";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm(null, null, null, FormMethod.Post, new { id = "RolForm", name = "RolForm", @class = "form-group" }))
+{<h1>Formulario para Anteproyecto</h1>
+
+    <div class="panel panel-default col-lg-12">
+
+
+
+
+        <div class="container-fluid col-lg-10">
+            <div id="MainPanel" class="panel-body">
+
+
+            </div>
+
+            <h2><strong>Exclusivo para uso de la direccion de carrera</strong></h2>
+            <br />
+
+            <form>
+                <div class="row">
+                    <!-- Select Director Name -->
+                    <div class="form-group col-sm-3 col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Seleccione nombre de Aprobador</option>
+                            <option value="1">Director Nombre1</option>
+                            <option value="2">Director Nombre2</option>
+                            <option value="3">Director Nombre3</option>
+                            <option value="4">Director Nombre4</option>
+                        </select>
+                    </div>
+                    <!-- Select Director Name -->
+                    <!-- Select text -->
+                    <div class="form-group col-sm-3 col-xs-12">
+                        <label for="staticEmail" class="col-form-label">, <strong>Director(a) de la carrera de </strong></label>
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Carreras -->
+                    <div class="form-group col-sm-3  col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Nombre de Carrera</option>
+
+                        </select>
+                        <!-- Select Carreras -->
+                    </div>
+
+                </div>
+
+                <!-- Select text -->
+                <div class="row">
+                    <div class="form-group col-sm-12 col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>,manifiesta que ha revisado la solicitud de realizacion del trabajo comunal Universitario correspondiente a: </strong></label>
+
+                    </div>
+                </div>
+                <!-- Select Carreras -->
+
+                <div class="row">
+                    <!-- Select Nombre de Estudiante -->
+                    <div class="form-group col-sm-4  col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Seleccione nombre del(a) Estudiante</option>
+                            <option value="1">Estudiante Nombre1</option>
+                            <option value="2">Estudiante Nombre2</option>
+                            <option value="3">Estudiante Nombre3</option>
+                            <option value="4">Estudiante Nombre4</option>
+                        </select>
+                    </div>
+                    <!-- Select Nombre de Estudiante -->
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-2  col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>  Cedula de Identidad </strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Cedula -->
+                    <div class="form-group col-sm-3  col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Cedula de Estudiante</option>
+                        </select>
+                    </div>
+                    <!-- Select Cedula -->
+
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-2  col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>, estudiante de la carrera</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Carreras -->
+                    <div class="form-group col-sm-3  col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Nombre de Carrera</option>
+
+                        </select>
+                        <!-- Select Carreras -->
+                    </div>
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-4  col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>, por lo que en apego de lo que establece el</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-5  col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>Reglamento del Trabajo Comununal Universitario</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Nombre de Estudiante -->
+                    <div class="form-group col-sm-1  col-xs-12">
+                        <select id="" name="Sede" class="form-control form-control-sm">
+                            <option value="" selected disabled>Si/No</option>
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+
+                        </select>
+                    </div>
+                    <!-- Select Nombre de Estudiante -->
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-5  col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>autorizo la Matricula de</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-4 col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong> dicho trabajo el cual se realizara en </strong></label>
+
+                    </div>
+                    <!-- Select Nombre de la Institucion -->
+                    <div class="form-group col-sm-5 col-xs-12">
+
+                        <input type="text" class="form-control form-control-sm" id="email" placeholder="Nombre Completo de la Institucion" name="email">
+                    </div>
+                    <!-- Select Nombre de la Institucion -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-4 col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>cumpliendo las funciones de:</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Estudiante Funciones -->
+                    <div class="form-group col-sm-9 col-xs-12">
+
+                        <textarea class="form-control" rows="5" id="AcividadRealizar"></textarea>
+                    </div>
+                    <!-- Select Estudiante Funciones  -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-3 col-xs-8">
+                        <label for="staticEmail" class="col-form-label"> <strong>con una duracion de horas:</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Horas -->
+                    <div class="form-group col-sm-2 col-xs-3">
+
+                        <input type="number" class="form-control form-control-sm" id="email" placeholder="" name="email">
+                    </div>
+                    <!-- Select Horas -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-4 col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>Distribuidas de la siguiente forma:</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Horas distribuidas -->
+                    <div class="form-group col-sm-9 col-xs-12">
+
+                        <textarea class="form-control" rows="5" id="AcividadRealizar"></textarea>
+                    </div>
+                    <!-- Select Horas distribuidas  -->
+                </div>
+                <div class="row">
+                    <!-- Select text -->
+                    <div class="form-group  col-sm-7 col-xs-12">
+                        <label for="staticEmail" class="col-form-label"> <strong>Justificaciones (llenar solamente en el caso que se deniegue la solicitud)</strong></label>
+
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Horas deniegue -->
+                    <div class="form-group col-sm-9 col-xs-12">
+
+                        <textarea class="form-control" rows="5" id="AcividadRealizar"></textarea>
+                    </div>
+                    <!-- Select Horas deniegue  -->
+                </div>
+
+                <div class="row">
+
+                    <!-- Select text -->
+                    <div class="form-group col-sm-2 col-xs-12">
+                        <label for="staticEmail" class="col-form-label">, <strong>Dado en  </strong></label>
+                    </div>
+                    <!-- Select text -->
+                    <!-- Select Sede -->
+                    <div class="form-group col-sm-3 col-xs-12">
+
+                        <select id="" name="Sede" class="form-control">
+                            <option value="" selected disabled>Seleccione la Sede de preferencia</option>
+                            <option value="1">Aranjuez</option>
+                            <option value="2">Llorente</option>
+                            <option value="3">Heredia</option>
+                            <option value="4">Puntarenas</option>
+                        </select>
+
+                    </div>
+                    <!-- Select Sede -->
+                    <!-- Select text -->
+                    <div class="form-group col-sm-1 col-xs-12">
+                        <label for="staticEmail" class="col-form-label">, <strong>Fecha: </strong></label>
+                    </div>
+                    <!-- Select text -->
+                    <div class="input-group date col-sm-3 col-xs-12" data-provide="datepicker">
+                        <input type="text" class="form-control ">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+                <div>
+                    <br />
+                </div>
+               
+            </form>
+
+        </div>
+    </div>
+    }
+
+
+
+
+    
+

@@ -1,0 +1,286 @@
+﻿@model prTCUv2.ViewModels.vmLogin
+@{
+    Layout = null;
+}
+
+
+
+<!--
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TCU - Login</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+
+    <div class="header" id="header-1">
+
+        <input type="checkbox" id="toggle-menu-01" class="toggle-menu-checkbox-01">
+
+        <input type="checkbox" id="toggle_overlay-01" class="toggle-overlay-checkbox-01">
+        <label for="toggle-menu-01" class="label toggle-overlay-label-01"></label>
+
+        <input type="checkbox" id="toggle-menu-02" class="toggle-menu-checkbox-02">
+        <label for="toggle-menu-02" class="label toggle-menu-label-02"><span class="slice"></span><span class="slice"></span><span class="slice"></span></label>
+
+        <input type="checkbox" id="toggle_overlay-02" class="toggle-overlay-checkbox-02">
+        <label for="toggle-menu-02" class="label toggle-overlay-label-02"></label>
+
+        <ul class="site-menu-left">
+            <li class="site-menu-left-item" id="sm-left-title">Información</li>
+            <li class="site-menu-left-item" id="sm-left-title">Números de teléfono<br>Tel: 855-815-5698 ext 452<br>Tel: 855-815-8992 ext 352</li>
+        </ul>
+
+    </div>
+
+    <div id="slider-container">
+        <div id="slider">
+            <ul>
+                <li id="slide1">
+                    <img class="banner" src="~/images/banner-01.jpg" />
+                </li>
+
+                <li id="slide2">
+                    <img class="banner" src="~/images/banner-02.jpg" />
+                </li>
+
+                <li id="slide3">
+                    <img class="banner" src="~/images/banner-03.jpg" />
+                </li>
+
+                <li id="slide4">
+                    <img class="banner" src="~/images/banner-04.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-cont-class" id="test-cont-id">
+
+        <div class="slider-ind-container">
+            <div class="slider-ind" id="slider-ind-01"></div>
+            <div class="slider-ind" id="slider-ind-02"></div>
+            <div class="slider-ind" id="slider-ind-03"></div>
+            <div class="slider-ind" id="slider-ind-04"></div>
+        </div>
+    </div>
+    <div id="main-login">
+        <div id="main-login">
+            @using (Html.BeginForm("Index", "Home", new { returnUrl = ViewBag.ReturnUrl }))
+            {
+                @Html.TextBoxFor(u => u.UserName, null, new { value = "", @class = "login-text-input", @placeholder = "USERNAME", autofocus = "true", autocomplete = "off", required = "required" })
+                @Html.PasswordFor(u => u.Password, new { value = "", @class = "login-text-input", @placeholder = "PASSWORD", autofocus = "true", autocomplete = "off", required = "required" })
+                <input type="submit" value="Acceder" class="submit-button">
+                Response.Write(TempData["Error"]);
+            }
+        </div>
+    </div>
+
+    <script src="~/Scripts/lockr.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        if (Lockr.get('user_id'))
+            Lockr.rm('user_id');
+    </script>
+</body>
+</html>
+
+    -->
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Registro</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.css">
+    <link rel="stylesheet" href="~/Content/css/owl.transitions.css">
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/animate.css">
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/normalize.css">
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/main.css">
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="~/Content/css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="~/Content/css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/form/all-type-forms.css">
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/style.css">
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="~/Content/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="error-pagewrap">
+        <div class="error-page-int">
+            <div class="text-center m-b-md custom-login">
+                <img src="~/Content/img/logo.png" alt="logo"/>
+                @*<h3>PLEASE LOGIN TO APP</h3>
+                <p>This is the best app ever!</p>*@
+            </div>
+            <div class="content-error">
+                <div class="hpanel">
+                    <div class="panel-body">
+
+                        @using (Html.BeginForm("Index", "Home", new { returnUrl = ViewBag.ReturnUrl }))
+                        {
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="username">Username</label>
+                                @Html.TextBoxFor(u => u.UserName, null, new { value = "", @class = "form-control", @placeholder = "USERNAME", autofocus = "true", autocomplete = "off", required = "required" })
+                                <!--<span class="help-block small">Your unique username to app</span>-->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                @Html.PasswordFor(u => u.Password, new { value = "", @class = "form-control", @placeholder = "PASSWORD", autofocus = "true", autocomplete = "off", required = "required" })
+                                <!--<span class="help-block small">Yur strong password</span>-->
+                            </div>
+
+                            <input type="submit" value="Acceder" class="btn btn-success btn-block loginbtn">
+                            
+                            Response.Write(TempData["Error"]);
+                        }
+
+                        <!--
+                        <form action="#" id="loginForm">
+                            <div class="form-group">
+                                <label class="control-label" for="username">Username</label>
+                                <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
+                                <span class="help-block small">Your unique username to app</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                                <span class="help-block small">Yur strong password</span>
+                            </div>
+                            <div class="checkbox login-checkbox">
+                                <label>
+                                    <input type="checkbox" class="i-checks"> Remember me
+                                </label>
+                                <p class="help-block small">(if this is a private computer)</p>
+                            </div>
+                            <button class="btn btn-success btn-block loginbtn">Login</button>
+                            <a class="btn btn-default btn-block" href="#">Register</a>
+                        </form>
+                            -->
+                    </div>
+                </div>
+            </div>
+            <div class="text-center login-footer">
+                <div>
+                    <a href="https://www.instagram.com/uhispanoamericana/" target="_top"><img src="~/Content/img/ig.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/universidaduh" target="_blank"><img src="~/Content/img/tw.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/uhispanoamericana/" target="_self"><img src="~/Content/img/fb.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery
+        ============================================ -->
+    <script src="~/Content/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+        ============================================ -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <!-- wow JS
+        ============================================ -->
+    <script src="~/Content/js/wow.min.js"></script>
+    <!-- price-slider JS
+        ============================================ -->
+    <script src="~/Content/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+        ============================================ -->
+    <script src="~/Content/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+        ============================================ -->
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+        ============================================ -->
+    <script src="~/Content/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+        ============================================ -->
+    <script src="~/Content/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+        ============================================ -->
+    <script src="~/Content/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+        ============================================ -->
+    <script src="~/Content/js/metisMenu/metisMenu.min.js"></script>
+    <script src="~/Content/js/metisMenu/metisMenu-active.js"></script>
+    <!-- tab JS
+        ============================================ -->
+    <script src="~/Content/js/tab.js"></script>
+    <!-- icheck JS
+        ============================================ -->
+    <script src="~/Content/js/icheck/icheck.min.js"></script>
+    <script src="~/Content/js/icheck/icheck-active.js"></script>
+    <!-- plugins JS
+        ============================================ -->
+    <script src="~/Content/js/plugins.js"></script>
+    <!-- main JS
+        ============================================ -->
+    <script src="~/Content/js/main.js"></script>
+
+
+
+    <script src="~/Scripts/lockr.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        if (Lockr.get('user_id'))
+            Lockr.rm('user_id');
+    </script>
+</body>
+
+</html>

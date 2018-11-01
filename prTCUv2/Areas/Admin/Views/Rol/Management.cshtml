@@ -1,0 +1,29 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "Roles";
+    Layout = "../Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm(null, null, null, FormMethod.Post, new { id = "RolForm", name = "RolForm", @class = "form-group" }))
+{
+    <div id="Alert" style="margin-bottom: 20px"></div>
+
+    <div class="panel panel-default">
+        <p class="panel-heading">Roles</p>
+        <div id="MainPanel" class="panel-body">
+
+        </div>
+    </div>
+
+}
+
+<script>
+    @if (TempData["Error"] != null || TempData["ModelError"] != null)
+    {
+        @Html.Raw("ErrorAlert(\"" + TempData["Error"] + TempData["ModelError"] + "\");");
+    }
+    else if (TempData["Success"] != null)
+    {
+        @Html.Raw("SuccessAlert(\"" + TempData["Success"] + "\");");
+    }
+</script>

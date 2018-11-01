@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "AnteProyecto";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm(null, null, null, FormMethod.Post, new { id = "RolForm", name = "RolForm", @class = "form-group" }))
+{
+<div class="container-fluid">
+
+    <!--<h1>Formulario para Anteproyecto</h1>-->
+
+    <div class="panel panel-default col-lg-12">
+
+
+
+
+        <div class="container-fluid col-lg-10">
+            <div id="MainPanel" class="panel-body">
+
+
+            </div>
+
+            <h2><strong>Anteproyecto TCU</strong></h2>
+            <br />
+
+            <form>
+
+
+
+                <br />
+                <!-- Select titulo del Proyecto -->
+                <div class="form-group">
+                    <label for="HorasDistribucion"><strong>Titulo del Proyecto:</strong></label>
+                    <input type="text" class="form-control" id="HorasDistribucion" placeholder="Escribir aqui el Titulo del anteproyecto de TCU" name="tcuLugar">
+                    <span class="help-block">Debe incluir una delimitacion clara sobre los alcances del TCU, maximo 20 palabras.</span>
+                </div>
+                <!-- Select titulo del Proyecto-->
+                <!-- Select Periodo AnteProyecto -->
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label for="PeriodoFecha"><strong>Periodo que comprende el Proyecto:</strong></label>
+                        <input type="text" class="form-control" id="PeriodoFecha" placeholder="Escribir el periodo aqui" name="tcuLugar">
+
+                    </div>
+                    <!-- Select Alcance -->
+                    <div class="form-group col-xs-6">
+                        <label for="Alcance"><strong>Alcance:</strong></label>
+                        <input type="text" class="form-control" id="Alcance" placeholder="Escribir el Alcance aqui" name="tcuLugar">
+
+                    </div>
+                    <!-- Select Alcance -->
+                </div>
+                <!-- Select Periodo AnteProyecto-->
+                <!-- Select Informacion de la institucion -->
+                <div class="form-group">
+                    <label for="infoInstitucion"><strong>Nombre, descripcion y direccion de la institucion donde se realiza:</strong></label>
+                    <input type="text" class="form-control" id="infoInstitucion" placeholder="Escribir la informacion de la institucion aqui" name="tcuLugar">
+
+                </div>
+                <!-- Select Informacion de la institucion -->
+                <!-- Select Descripcion del Problema -->
+                <div class="form-group">
+                    <label for="DescripcionProblema"><strong>Descripcion del Problema :</strong></label>
+                    <textarea class="form-control" rows="3" id="DescripcionProblema" placeholder="Escribir descripcion del problema aqui"></textarea>
+                    <span class="help-block">Debe describir la necesidad que se busca atender mediante el TCU.</span>
+                </div>
+                <!-- Select Descripcion del Problema -->
+                <!-- Select Descripcion Beneficiarios -->
+                <div class="form-group">
+                    <label for="DescripcionBeneficiarios"><strong>Descripcion de beneficiarios:</strong></label>
+                    <textarea class="form-control" rows="3" id="DescripcionBeneficiarios" placeholder="Escribir descripcion de Beneficiarios aqui"></textarea>
+                    <span class="help-block">Describir los grupos que se veran directamente favorecidos con la solucion.</span>
+                </div>
+                <!-- Select Descripcion Beneficiarios -->
+                <!-- Select Objetivos Generales y Especificos -->
+                <div class="form-group">
+                    <label for="ObjetivosGE"><strong>Objetivos Generales y Especificos:</strong></label>
+                    <textarea class="form-control" rows="5" id="ObjetivosGE" placeholder="Escribir los Objetivos aqui"></textarea>
+                    <span class="help-block">
+                        En general se debe redactar en terminos de la principal accion que se debe realizar para solventar el problema
+                        detectado, mientras que los especificos son las acciones secuenciales que se debe realizar para lograr el objetivo general.
+                    </span>
+                </div>
+                <!-- Select Objetivos Generales y Especificos -->
+                <!-- Select Justificacion -->
+                <div class="form-group">
+                    <label for="Justificacion"><strong>Justificacion del proyecto:</strong></label>
+                    <textarea class="form-control" rows="3" id="Justificacion" placeholder="Escribir Justificacion del proyecto aqui"></textarea>
+                    <span class="help-block">Descripcion de la pertinencia y relacion de los conocimientos y habilidades del perfil del estudiante para atender el problema.</span>
+                </div>
+                <!-- Select Estrategias-->
+
+                <div class="form-group">
+                    <label for="Estrategias"><strong>Estrategias y pertenencia de solucion:</strong></label>
+                    <textarea class="form-control" rows="3" id="Estrategias" placeholder="Escribir Estrategias y pertenencia aqui"></textarea>
+                    <span class="help-block">Breve descripcion del plan que se propone para conseguir cumplir con los objetivos.</span>
+                </div>
+                <!-- Select Estrategias-->
+                <br />
+                <button type="submit" class="btn btn-default">Guardar</button>
+                <button type="submit" class="btn btn-default">Guardar</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+}

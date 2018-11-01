@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "Matricula de TCU";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+@using (Html.BeginForm(null, null, null, FormMethod.Post, new { id = "RolForm", name = "RolForm", @class = "form-group" }))
+{
+<div class="container-fluid">
+
+    <!-- <h1>Formulario para Matricula y Boleta de TCU</h1>-->
+
+    <div class="panel panel-default col-lg-12">
+        @*<p class="panel-heading">Comprobante de Matricula Trabajo Comunal Universitario</p>*@
+
+
+
+        <div class="container-fluid col-lg-10">
+            <div id="MainPanel" class="panel-body">
+
+
+            </div>
+
+            <h2><strong>Información Principal</strong></h2>
+            <br />
+
+            <form>
+                <!-- Select Sede -->
+                <div class="form-group">
+                    <label for="Sede"><strong>Sede:</strong></label>
+
+                    <select id="" name="Sede" class="form-control">
+                        <option value="" selected disabled>Seleccione la Sede de preferencia</option>
+                        <option value="1">Aranjuez</option>
+                        <option value="2">Llorente</option>
+                        <option value="3">Heredia</option>
+                        <option value="4">Puntarenas</option>
+                    </select>
+
+                </div>
+                <!-- Select Sede -->
+                <!-- Select Nombre -->
+                <div class="row">
+                    <div class="form-group col-xs-6 ">
+                        <label for="Name"><strong>Nombre:</strong></label>
+                        <input type="text" class="form-control" id="email" placeholder="Nombre Completo" name="email">
+                    </div>
+                    <!-- Select Nombre -->
+                    <!-- Select Cedula -->
+                    <div class="form-group col-xs-6">
+                        <label for="pwd"><strong>Cédula:</strong></label>
+                        <input type="number" data-bind="value:replyNumber" class="form-control" id="pwd" placeholder="xxx-xxx-xxx ejemplo: 101000111" name="pwd">
+                    </div>
+                </div>
+                <!-- Select Cedula -->
+                <!-- Select Carrera -->
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label for="pwd"><strong>Carrera que cursa:</strong></label>
+                        <input id="Carrera" class="form-control input-group-lg reg_name" type="text" name="Carrera"
+                               placeholder="Nombre de la Carrera" />
+                    </div>
+                    <!-- Select Carrera -->
+                    <!-- Select Nivel de carrera -->
+                    <div class="form-group col-xs-6">
+                        <label for="Sede"><strong>Nivel de Carrera:</strong></label>
+
+                        <select id="" name="Sede" class="form-control">
+                            <option value="" selected disabled>Nivel de carrera cursando</option>
+                            <option value="1">Bachillerato</option>
+                            <option value="2">Licenciatura</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+                <!-- Select Nivel de carrera -->
+                <!-- Select Telefonos Home -->
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label for="pwd"><strong>Teléfono de Casa:</strong></label>
+                        <input type="number" data-bind="value:replyNumber" class="form-control" id="pwd" placeholder="xxxxxxxx ejemplo: 88668800" name="pwd">
+                    </div>
+                    <!-- Select Telefonos Home -->
+                    <!-- Select Telefonos Movil -->
+                    <div class="form-group col-xs-6">
+                        <label for="pwd"><strong>Teléfono Móvil:</strong></label>
+                        <input type="number" data-bind="value:replyNumber" class="form-control" id="pwd" placeholder="xxxxxxxx ejemplo: 88668800" name="pwd">
+                    </div>
+
+                </div>
+                <!-- Select Telefonos Movil -->
+                <!-- Select correo electronico -->
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label for="email"><strong>Correo Electrónico:</strong></label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresar su Correo Electrónico" name="Email">
+                    </div>
+                    <!-- Select correo electronic -->
+                    <!-- Select Apd Postal -->
+                    <!--                    <div class="form-group col-xs-6">
+        <label for="apd"><strong>Apdo. Postal:</strong></label>
+        <input type="text" class="form-control" id="apd" placeholder="Apartado Postal" name="apd">
+    </div>-->
+
+                </div>
+                    <!-- Select Apd Postal -->
+                    <!-- Select Direccion -->
+                    <div class="form-group">
+                        <div class="form-group ">
+                            <label for="Name"><strong>Dirección de domicilio:</strong></label>
+                            <input type="text" class="form-control" id="email" placeholder="Dirección Completa" name="email">
+                        </div>
+
+                    </div>
+                    <!-- Select Direccion -->
+                    <!-- Select Lugar de trabajo -->
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="trabajo"><strong>Lugar de Trabajo:</strong></label>
+                            <input type="text" class="form-control" id="trabajo" placeholder="Lugar donde labora actualmente" name="trabajo">
+                        </div>
+                        <!-- Select Lugar de trabajo -->
+                        <!-- Select trabajo Telefono -->
+                        <div class="form-group col-xs-6">
+                            <label for="pwd"><strong>Teléfono:</strong></label>
+                            <input type="number" data-bind="value:replyNumber" class="form-control" id="pwd" placeholder="Teléfono donde Labora" name="pwd">
+                        </div>
+
+                    </div>
+                    <!-- Select Apd Postal -->
+
+                    <h2><strong>Descripción del Proyecto de TCU</strong></h2>
+                    <br />
+                    <!-- Select Lugar de TCU -->
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="trabajo"><strong>Institución donde se va a realizar:</strong></label>
+                            <input type="text" class="form-control" id="tcuLugar" placeholder="Nombre de la Institución" name="tcuLugar">
+                        </div>
+                        <!-- Select Lugar de TCU -->
+                        <!-- Select trabajo Telefono -->
+                        <div class="row">
+                            <div class="form-group col-xs-6">
+                                <label for="trabajo"><strong>Persona a cargo de la supervisión:</strong></label>
+                                <input type="text" class="form-control" id="tcuSup" placeholder="Nombre del Supervisor" name="tcuSup">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Select Apd Postal -->
+                    <!-- Select Actividades a Realizar -->
+                    <div class="form-group">
+                        <label for="AcividadRealizar"><strong>Actividades a Realizar:</strong></label>
+                        <textarea class="form-control" rows="5" id="AcividadRealizar"></textarea>
+                    </div>
+                    <!-- Select Actividades a Realizar -->
+                    <!-- Select Numero de Horas a Realizar y distribucion de las mismas -->
+                    <div class="form-group">
+                        <label for="HorasDistribucion"><strong>Número de Horas a Realizar y distribución de las mismas:</strong></label>
+                        <textarea class="form-control" rows="5" id="HorasDistribucion"></textarea>
+                    </div>
+                    <!-- SelectNumero de Horas a Realizar y distribucion de las mismas -->
+                    <!-- Select Declaracion -->
+                    <div class="form-group">
+                        <label for="HorasDistribucion">
+                            <strong>
+                                Declaro hoy que conozco y me comprometo a acatar el Reglamento del trabajo Comunal Universitario,
+                                asi como los Reglamentos y Estatutos Universitarios:
+                            </strong>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="optradio"><strong>Acepto</strong></label>
+                    </div>
+                    <!-- Select Declaracion -->
+
+                    <br />
+                    <button type="submit" class="btn btn-default">Guardar</button>
+</form>
+
+
+        </div>
+
+    </div>
+</div>
+
+        }
